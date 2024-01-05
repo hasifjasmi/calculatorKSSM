@@ -7,6 +7,12 @@ import ButtonBox from "./components/ButtonBox";
 import "./index.css";
 import React, { useState } from "react";
 
+// PROBLEM ENCOUNTRERD
+// 1. file react-textfit not found or module not found
+// solution? remove the damn file and use different approach
+// 2. use client problem
+// solution? just add "use client"; on top of the file and it will render as client side
+
 const btnValues = [
   ["C", "+-", "%", "/"],
   [7, 8, 9, "X"],
@@ -126,7 +132,9 @@ export default function Home() {
   return (
     <>
       <div>
-        <h1 className="text-lg">test</h1>
+        <h1 className="text-lg">
+          CALCULATOR KSSM GROUP 8 ADA THAQEP HAIKAL AM HASIF NOPAL
+        </h1>
         <Wrapper>
           <Screen value={calc.num ? calc.num : calc.res} />
           <ButtonBox>
